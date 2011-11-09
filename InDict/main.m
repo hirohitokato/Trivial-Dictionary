@@ -2,8 +2,8 @@
 //  main.m
 //  InDict
 //
-//  Created by 加藤 寛人 on 11/11/09.
-//  Copyright (c) 2011年 KatokichiSoft. All rights reserved.
+//  Created by Hirohito Kato on 11/11/09.
+//  Copyright (c) 2011 KatokichiSoft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

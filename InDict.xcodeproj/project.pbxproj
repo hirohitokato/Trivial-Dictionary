@@ -14,9 +14,8 @@
 		910708B6146AB37100E1BA88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 910708B5146AB37100E1BA88 /* main.m */; };
 		910708BA146AB37100E1BA88 /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 910708B9146AB37100E1BA88 /* KSAppDelegate.m */; };
 		910708BD146AB37100E1BA88 /* KSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910708BC146AB37100E1BA88 /* KSMasterViewController.m */; };
-		910708C0146AB37100E1BA88 /* KSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910708BF146AB37100E1BA88 /* KSDetailViewController.m */; };
 		910708C3146AB37100E1BA88 /* KSMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910708C1146AB37100E1BA88 /* KSMasterViewController.xib */; };
-		910708C6146AB37100E1BA88 /* KSDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910708C4146AB37100E1BA88 /* KSDetailViewController.xib */; };
+		910708CD146ACD8200E1BA88 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 910708CC146ACD8200E1BA88 /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +23,16 @@
 		910708A9146AB37100E1BA88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		910708AB146AB37100E1BA88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		910708AD146AB37100E1BA88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		910708B1146AB37100E1BA88 /* InDict-Info.plist */ = {isa = PBXFileReference; path = "InDict-Info.plist"; sourceTree = "<group>"; };
+		910708B1146AB37100E1BA88 /* InDict-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InDict-Info.plist"; sourceTree = "<group>"; };
 		910708B3146AB37100E1BA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		910708B5146AB37100E1BA88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		910708B7146AB37100E1BA88 /* InDict-Prefix.pch */ = {isa = PBXFileReference; path = "InDict-Prefix.pch"; sourceTree = "<group>"; };
-		910708B8146AB37100E1BA88 /* KSAppDelegate.h */ = {isa = PBXFileReference; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		910708B7146AB37100E1BA88 /* InDict-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InDict-Prefix.pch"; sourceTree = "<group>"; };
+		910708B8146AB37100E1BA88 /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
 		910708B9146AB37100E1BA88 /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
-		910708BB146AB37100E1BA88 /* KSMasterViewController.h */ = {isa = PBXFileReference; path = KSMasterViewController.h; sourceTree = "<group>"; };
+		910708BB146AB37100E1BA88 /* KSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSMasterViewController.h; sourceTree = "<group>"; };
 		910708BC146AB37100E1BA88 /* KSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMasterViewController.m; sourceTree = "<group>"; };
-		910708BE146AB37100E1BA88 /* KSDetailViewController.h */ = {isa = PBXFileReference; path = KSDetailViewController.h; sourceTree = "<group>"; };
-		910708BF146AB37100E1BA88 /* KSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSDetailViewController.m; sourceTree = "<group>"; };
 		910708C2146AB37100E1BA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KSMasterViewController.xib; sourceTree = "<group>"; };
-		910708C5146AB37100E1BA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KSDetailViewController.xib; sourceTree = "<group>"; };
+		910708CC146ACD8200E1BA88 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +52,7 @@
 		9107089A146AB37000E1BA88 = {
 			isa = PBXGroup;
 			children = (
+				910708CC146ACD8200E1BA88 /* README.markdown */,
 				910708AF146AB37100E1BA88 /* InDict */,
 				910708A8146AB37100E1BA88 /* Frameworks */,
 				910708A6146AB37100E1BA88 /* Products */,
@@ -86,10 +84,7 @@
 				910708B9146AB37100E1BA88 /* KSAppDelegate.m */,
 				910708BB146AB37100E1BA88 /* KSMasterViewController.h */,
 				910708BC146AB37100E1BA88 /* KSMasterViewController.m */,
-				910708BE146AB37100E1BA88 /* KSDetailViewController.h */,
-				910708BF146AB37100E1BA88 /* KSDetailViewController.m */,
 				910708C1146AB37100E1BA88 /* KSMasterViewController.xib */,
-				910708C4146AB37100E1BA88 /* KSDetailViewController.xib */,
 				910708B0146AB37100E1BA88 /* Supporting Files */,
 			);
 			path = InDict;
@@ -159,7 +154,7 @@
 			files = (
 				910708B4146AB37100E1BA88 /* InfoPlist.strings in Resources */,
 				910708C3146AB37100E1BA88 /* KSMasterViewController.xib in Resources */,
-				910708C6146AB37100E1BA88 /* KSDetailViewController.xib in Resources */,
+				910708CD146ACD8200E1BA88 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +168,6 @@
 				910708B6146AB37100E1BA88 /* main.m in Sources */,
 				910708BA146AB37100E1BA88 /* KSAppDelegate.m in Sources */,
 				910708BD146AB37100E1BA88 /* KSMasterViewController.m in Sources */,
-				910708C0146AB37100E1BA88 /* KSDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,14 +188,6 @@
 				910708C2146AB37100E1BA88 /* en */,
 			);
 			name = KSMasterViewController.xib;
-			sourceTree = "<group>";
-		};
-		910708C4146AB37100E1BA88 /* KSDetailViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				910708C5146AB37100E1BA88 /* en */,
-			);
-			name = KSDetailViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,7 +244,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InDict/InDict-Prefix.pch";
 				INFOPLIST_FILE = "InDict/InDict-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -269,7 +257,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InDict/InDict-Prefix.pch";
 				INFOPLIST_FILE = "InDict/InDict-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

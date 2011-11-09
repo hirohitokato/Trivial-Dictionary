@@ -2,16 +2,20 @@
 //  KSMasterViewController.h
 //  InDict
 //
-//  Created by 加藤 寛人 on 11/11/09.
-//  Copyright (c) 2011年 KatokichiSoft. All rights reserved.
+//  Created by Hirohito Kato on 11/11/09.
+//  Copyright (c) 2011 KatokichiSoft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class KSDetailViewController;
-
+@class UITextChecker;
 @interface KSMasterViewController : UITableViewController
+<UISearchBarDelegate>
 
-@property (strong, nonatomic) KSDetailViewController *detailViewController;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) UITextChecker *checker;
 
+@property (copy, nonatomic) NSString *matched;
+@property (strong, nonatomic) NSArray *suggestions;
+@property (strong, nonatomic) NSArray *history;
 @end
