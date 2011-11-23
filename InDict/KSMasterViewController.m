@@ -8,6 +8,22 @@
 #import "KSMasterViewController.h"
 #import <UIKit/UITextChecker.h>
 
+BOOL useEnglishDict = NO;
+
+@interface NSLocale (CustomLang)
++ (NSArray *)preferredLanguages;
+@end
+
+@implementation NSLocale (CustomLang)
++ (NSArray *)preferredLanguages {
+    if (useEnglishDict) {
+        return [NSArray arrayWithObject:@"en"];
+    } else {
+        return [NSArray arrayWithObject:@"ja"];
+    }
+}
+@end
+
 @interface KSMasterViewController ()
 - (void)search;
 @end
@@ -28,7 +44,7 @@
         self.searchBar.delegate = self;
 
         _checker = [[UITextChecker alloc] init];
-        NSLog(@"available language:%@", [UITextChecker availableLanguages]);
+        // NSLog(@"available language:%@", [UITextChecker availableLanguages]);
     }
     return self;
 }
@@ -206,11 +222,13 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
-    // called when text changes (including clear)
+    // 入力した文字列を使って候補を取得
     _suggestions = [_checker guessesForWordRange:NSMakeRange(0, [searchText length])
                                         inString:searchText
                                         language:@"en_US"];
-    BOOL isMatched = [UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:searchText];
+    // 一致した単語があるかどうかを判定
+    BOOL isMatched = [UIReferenceLibraryViewController
+                      dictionaryHasDefinitionForTerm:searchText];
     if (isMatched) {
         self.matched = searchText;
     } else {
@@ -245,6 +263,15 @@
 
 - (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope
 {
-    
+    switch (selectedScope) {
+        case 0: // Japanese, Eng-Jpn
+            useEnglishDict = NO;
+            break;
+        case 1: // Eng-Eng, Jpn-Eng
+            useEnglishDict = YES;
+            break;
+        default:
+            break;
+    }
 }
 @end

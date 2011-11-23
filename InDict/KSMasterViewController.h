@@ -17,5 +17,5 @@
 
 @property (copy, nonatomic) NSString *matched;
 @property (strong, nonatomic) NSArray *suggestions;
-@property (strong, nonatomic) NSArray *history;
+@property (strong, nonatomic) NSArray *history; // not implemented yet
 @end
