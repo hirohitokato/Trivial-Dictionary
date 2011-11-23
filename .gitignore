@@ -1,0 +1,14 @@
+# osx noise
+.DS_Store
+
+# xcode noise
+*.mode1v3
+*.pbxuser
+build/*
+build/
+
+# Xcode4 noise
+xcuserdata
+DerivedData/
+DerivedData/*
+
